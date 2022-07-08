@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
     Post.findAll({
         attributes: [
             'id',
@@ -53,6 +54,10 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/signup', (req, res) => {
+    res.render('signup');
+});
+
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -99,5 +104,7 @@ router.get('/post/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+
 
 module.exports = router;
