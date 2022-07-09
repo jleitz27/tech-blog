@@ -4,27 +4,27 @@
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
+    <div class="container-md">
       <input name="post-title" type="text" size="65" value="{{post.title}}" />
       
     </div>
-    <div>
+    <div class="container-md">
       
       <textarea name="post-text" type="text">{{post.post_text}}</textarea>
       
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <button type="submit" class="btn btn-info">Save post</button>
+    <button type="button" class="delete-post-btn btn btn-info">Delete post</button>
   </form>
 </article>
 
 <form class="comment-form">
-  <div>
+  <div class="container-md">
     <textarea name="comment-body"></textarea>
   </div>
 
-  <div>
-    <button type="submit">Add comment</button>
+  <div class="container-md">
+    <button type="submit" class="btn btn-info">Add comment</button>
   </div>
 </form>
 

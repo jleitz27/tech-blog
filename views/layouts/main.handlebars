@@ -12,15 +12,20 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Tech Blog!</a>
-      </h1>
+      <div class="jumbotron">
+                <h1>
+                    <a href="/" class="blog-title text-info">Jason's Tech Blog</a>
+                </h1>
+                <p class="lead">Look at these great blogs and add one of your own</p>
+                <hr class="my-4">
+            </div>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style btn btn-info">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="text-info p-3">Login</a>
+        <a href="/" class="text-info p-3">Homepage</a>
         {{/if}}
       </nav>
     </header>
