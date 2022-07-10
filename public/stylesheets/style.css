@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body, html, input, textarea {
     height: 100%;
     padding: 0;
     margin: 0;
@@ -10,9 +10,48 @@ body, html {
     color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: #225ca3;
-    font-weight: bold;
-    transition: color .1s;
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid rgb(65, 71, 224);
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color:#13A2B8;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
 }
