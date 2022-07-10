@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [License](#license)
   - [GitHub Repo](#github-repo)
-  - [Link to video of working app](#link-to-video-of-working-app)
+  - [Link to deployed page on Heroku](#link-to-deployed-page-on-heroku)
   - [Questions](#questions)
 
 ## User Story
@@ -73,8 +73,8 @@
   ## GitHub Repo
     https://github.com/jleitz27/tech-blog  
 
-  ## Link to video of working app
- https://www.screencast.com/t/U4CpuDfN  
+  ## Link to deployed page on Heroku
+  https://frozen-oasis-37527.herokuapp.com/ 
 
 <p align="center">
   <img src="./lib/images/screenshot.png" width="350"
